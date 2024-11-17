@@ -1,6 +1,6 @@
 # Creating Responsive NavBar
 
-1.Create a header with elements and arrange them./n
+1.Create a header with elements and arrange them.
 2.Install 'react-router-dom' for creating routing in the application - command -> npm install react-router-dom
 3.create a router configuration for this we need to import "createBrowerRouter" from react-router-dom 
    - react router configuration[list] takes a list of paths(objects) like below 
