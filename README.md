@@ -22,9 +22,18 @@
   root.render(<RouterProvider />)
 
 5.Now like the created pages to the nav items in header
+
   import {Link} from 'react-router-dom'
-  <li><Link to="/home">Home</Link></li>
+  const Header = () => {
+       return (
+              <ul>
+                  <li><Link to="/home">Home</Link></li>
+              </ul>
+              )
+           }
+  
   -> react-router-dom provides <Link> element instead of using <a href="/home">. if we use the <a> element it will refresh the whole page , So we are using the <Link> element.
+  
 6.How handle children routers
   -->like Header + Home or Header + Products -- for this react-router-dom provides "CHILDREN ROUTER"
 
@@ -44,6 +53,7 @@
         ],
         errorElement:<Error />
     }
-  ])
+  ]);
+  
   like this we create children routers
   and we have errorElement for handling the errors
