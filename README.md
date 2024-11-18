@@ -37,7 +37,7 @@
 6.How handle children routers
   -->like Header + Home or Header + Products -- for this react-router-dom provides "CHILDREN ROUTER"
 
-  const appRouter = createBrowserRouter([
+   const appRouter = createBrowserRouter([
     {
         path:'/',
         element:<AppLayout/>,
@@ -52,7 +52,7 @@
             }
         ],
         errorElement:<Error />
-    }
+    },
   ]);
   
   like this we create children routers
