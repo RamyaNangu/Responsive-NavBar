@@ -8,7 +8,7 @@ const Header = () => {
           <img  src="https://image.similarpng.com/very-thumbnail/2021/07/Chef-restaurant-logo-illustrations-template-on-transparent-background-PNG.png" alt="logo-img"/>
         </div>
         <div className="flex items-center">
-           <ul className="flex m-4 p-4 cursor-pointer">
+           <ul className="flex m-4 p-4 cursor-pointer md:flex md:item-center">
             <li className="px-2"><Link to="/">Home</Link></li>
             <li className="px-2"><Link to="/products">Products</Link></li>
             <li className="px-2"><Link to="/offers">Offers</Link></li>

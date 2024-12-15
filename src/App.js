@@ -7,7 +7,7 @@ import NewlyAddedItems from './components/NewlyAddedItems'
 import Offers from './components/Offers'
 import Products from './components/Products'
 import Error from './components/Error'
-import {createBrowserRouter,Outlet} from 'react-router-dom'
+import {createBrowserRouter,Outlet, RouterProvider} from 'react-router-dom'
 
 const AppLayout = () =>{
 
@@ -19,7 +19,7 @@ const AppLayout = () =>{
   )
 }
 
-export const appRouter = createBrowserRouter([
+const appRouter = createBrowserRouter([
   {
     path:'/',
     element:<AppLayout />,
@@ -53,5 +53,14 @@ export const appRouter = createBrowserRouter([
   },
   
 ])
+
+const App = ()=>{
+
+  return(
+    <RouterProvider router={appRouter} />
+  );
+};
+
+export default App
 
 
